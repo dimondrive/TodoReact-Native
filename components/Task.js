@@ -11,8 +11,8 @@ export default function Task({text}) {
         <Text style={styles.itemText}>{text}</Text>
         </View>
         <View style={styles.circular}></View>
-        <View style={{}}>
-        <Text style={{marginTop:15,textAlign:'right'}}>{`Время создания ${date.toLocaleDateString()} ${date.toLocaleTimeString()} ${date.getSeconds()}`}</Text>
+        <View>
+        <Text style={{marginTop:15,textAlign:'right'}}>{`Дата создания ${date.getDate()}.0${date.getMonth()}.${date.getFullYear()} ${date.toLocaleTimeString()}`}</Text>
         </View>
     </View>
     
